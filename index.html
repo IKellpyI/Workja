@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desmos Embed Wrapper</title>
+  <style>
+    html, body { height: 100%; margin: 0; background: #ffffff; }
+    #wrap { position: fixed; inset: 0; }
+    iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <!-- HOW TO USE:
+         1) Go to your Desmos graph -> Share -> Copy Link, then add '?embed' to the end if it's not already present.
+         2) Replace DESMOS_EMBED_URL below with that link, e.g. https://www.desmos.com/calculator/abc123?embed
+         3) Host this page (GitHub Pages / Netlify). Then paste the hosted URL into Canva -> Apps -> Embed.
+    -->
+    <iframe src="DESMOS_EMBED_URL" allowfullscreen allow="fullscreen *"></iframe>
+  </div>
+</body>
+</html>
